@@ -141,3 +141,25 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Vanta.js Animation for Hero Section
+document.addEventListener('DOMContentLoaded', () => {
+    // Check if Vanta is loaded
+    if (window.VANTA) {
+        VANTA.NET({
+            el: "#home",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x4a90e2,
+            backgroundColor: 0xe8f4fd,
+            points: 10.00,
+            maxDistance: 22.00,
+            spacing: 16.00
+        })
+    }
+});
