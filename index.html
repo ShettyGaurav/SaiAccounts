@@ -6,6 +6,7 @@
     <title>Sai Accountables - Tax & Financial Solutions</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -33,13 +34,31 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Empowering Businesses with Smarter Tax & Financial Solutions</h1>
-            <p>Clear, compliant, and confident financial management for your business growth</p>
-            <div class="hero-buttons">
-                <a href="#contact" class="btn-primary">Get Started</a>
-                <a href="#services" class="btn-secondary">Our Services</a>
+        <div class="hero-container">
+            <div class="hero-glass-card" data-aos="zoom-in" data-aos-duration="1200">
+                <h1>Empowering Businesses with <span id="typed-text"></span></h1>
+                <p>Clear, compliant, and confident financial management for your business growth</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Get Started</a>
+                    <a href="#services" class="btn-secondary">Our Services</a>
+                </div>
             </div>
+
+            <!-- Floating Software Logos -->
+            <div class="floating-logo tally" data-aos="fade-right" data-aos-delay="200">
+                <span class="logo-icon">T</span> Tally Prime
+            </div>
+            <div class="floating-logo excel" data-aos="fade-left" data-aos-delay="400">
+                <i class="fas fa-file-excel"></i> Excel
+            </div>
+            <div class="floating-logo zoho" data-aos="fade-up-right" data-aos-delay="600">
+                <span class="logo-icon">Z</span> Zoho Books
+            </div>
+            <div class="floating-logo quickbooks" data-aos="fade-up-left" data-aos-delay="800">
+                <span class="logo-icon">Q</span> QuickBooks
+            </div>
+
+
         </div>
     </section>
 
@@ -51,15 +70,15 @@
             </div>
             <div class="about-content">
                 <div class="about-text">
-                    <p>At Sai Accountables, we believe that every business deserves clear, compliant, and confident financial management. With years of experience in Taxation, Accounting, Payroll, and CFO Advisory, we make finance simple, accurate, and stress-free — so you can focus on growing your business while we handle the numbers.</p>
-                    <p>Founded by experienced Tax Practitioners and Finance Experts, our firm offers end-to-end financial services — from Income Tax and GST filing to ESI, EPF compliance, and Virtual CFO solutions. We combine deep knowledge of Indian and Gulf accounting practices with modern tools and personalized attention to deliver results you can trust.</p>
+                    <p>At Sai Accountables, we believe that every business deserves clear, compliant, and confident financial management. With years of experience in Taxation, Accounting, Payroll, and CFO Advisory, we make finance simple, accurate, and stress-free so you can focus on growing your business while we handle the numbers.</p>
+                    <p>Founded by experienced Tax Practitioners and Finance Experts, our firm offers end-to-end financial services  from Income Tax and GST filing to ESI, EPF compliance, and Virtual CFO solutions. We combine deep knowledge of Indian and Gulf accounting practices with modern tools and personalized attention to deliver results you can trust.</p>
                 </div>
                 <div class="mission-vision">
-                    <div class="mission">
+                    <div class="mission" data-aos="fade-right" data-tilt data-tilt-max="5" data-tilt-speed="400">
                         <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
                         <p>To empower individuals and businesses with transparent, reliable, and strategic financial services that ensure growth, compliance, and peace of mind.</p>
                     </div>
-                    <div class="vision">
+                    <div class="vision" data-aos="fade-left" data-tilt data-tilt-max="5" data-tilt-speed="400">
                         <h3><i class="fas fa-eye"></i> Our Vision</h3>
                         <p>To become a trusted financial partner for entrepreneurs and organizations by redefining how tax, payroll, and compliance services are delivered — with precision, professionalism, and a personal touch.</p>
                     </div>
@@ -68,7 +87,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
             <div class="section-header">
@@ -76,33 +94,33 @@
                 <p>Complete financial solutions under one roof</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
-                    <i class="fas fa-calculator"></i>
+                <div class="service-card" data-aos="fade-up" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                    <i class="fas fa-calculator floating"></i>
                     <h3>Income Tax</h3>
                     <p>Professional ITR filing and tax planning services</p>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-receipt"></i>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                    <i class="fas fa-receipt floating"></i>
                     <h3>GST Services</h3>
                     <p>GST registration, filing, and compliance management</p>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-chart-line"></i>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                    <i class="fas fa-chart-line floating"></i>
                     <h3>Accounting</h3>
                     <p>Complete bookkeeping and financial reporting</p>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-users"></i>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                    <i class="fas fa-users floating"></i>
                     <h3>Payroll</h3>
                     <p>End-to-end payroll processing and management</p>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-shield-alt"></i>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                    <i class="fas fa-shield-alt floating"></i>
                     <h3>ESI & EPF</h3>
                     <p>Registration and monthly compliance services</p>
                 </div>
-                <div class="service-card">
-                    <i class="fas fa-user-tie"></i>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                    <i class="fas fa-user-tie floating"></i>
                     <h3>Virtual CFO</h3>
                     <p>Strategic financial advisory and planning</p>
                 </div>
@@ -117,30 +135,30 @@
                 <h2>Why Choose Us</h2>
             </div>
             <div class="features-grid">
-                <div class="feature">
+                <div class="feature" data-aos="fade-right">
                     <i class="fas fa-check-circle"></i>
                     <h3>Complete Financial Solutions</h3>
                     <p>From Income Tax, GST, Accounting, ESI & EPF to CFO services, everything under one roof.</p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-right" data-aos-delay="100">
                     <i class="fas fa-user-friends"></i>
                     <h3>Personalized Support</h3>
                     <p>We understand your business goals and provide tailor-made strategies to suit your needs.</p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-right" data-aos-delay="200">
                     <i class="fas fa-clipboard-check"></i>
                     <h3>Compliance Without Stress</h3>
                     <p>We take care of all statutory filings, deadlines, and audits, so you stay worry-free.</p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-left">
                     <i class="fas fa-laptop-code"></i>
                     <h3>Technology Driven</h3>
                     <p>We use tools like Tally and cloud platforms to ensure accuracy, efficiency, and data security.</p>
                 </div>
-                <div class="feature">
+                <div class="feature" data-aos="fade-left" data-aos-delay="100">
                     <i class="fas fa-handshake"></i>
                     <h3>Client-Focused Approach</h3>
-                    <p>We believe in long-term relationships — built on trust, transparency, and consistency.</p>
+                    <p>We believe in long-term relationships  built on trust, transparency, and consistency.</p>
                 </div>
             </div>
         </div>
@@ -154,28 +172,28 @@
                 <p>We cater to a diverse clientele including:</p>
             </div>
             <div class="clients-grid">
-                <div class="client-type">
-                    <i class="fas fa-user"></i>
+                <div class="client-type glass-card" data-aos="zoom-in" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                    <i class="fas fa-user floating"></i>
                     <h3>Individuals</h3>
                     <p>Salaried employees for ITR & TDS services</p>
                 </div>
-                <div class="client-type">
-                    <i class="fas fa-rocket"></i>
+                <div class="client-type glass-card" data-aos="zoom-in" data-aos-delay="100" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                    <i class="fas fa-rocket floating"></i>
                     <h3>Startups</h3>
                     <p>Small businesses and new ventures</p>
                 </div>
-                <div class="client-type">
-                    <i class="fas fa-industry"></i>
+                <div class="client-type glass-card" data-aos="zoom-in" data-aos-delay="200" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                    <i class="fas fa-industry floating"></i>
                     <h3>Traders & Manufacturers</h3>
                     <p>Contractors and industrial businesses</p>
                 </div>
-                <div class="client-type">
-                    <i class="fas fa-building"></i>
+                <div class="client-type glass-card" data-aos="zoom-in" data-aos-delay="300" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                    <i class="fas fa-building floating"></i>
                     <h3>Corporates</h3>
                     <p>Firms and large corporations</p>
                 </div>
-                <div class="client-type">
-                    <i class="fas fa-globe"></i>
+                <div class="client-type glass-card" data-aos="zoom-in" data-aos-delay="400" data-tilt data-tilt-glare data-tilt-max-glare="0.5">
+                    <i class="fas fa-globe floating"></i>
                     <h3>NRIs</h3>
                     <p>Gulf-based and international clients</p>
                 </div>
@@ -192,23 +210,23 @@
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
+                    <div class="contact-item" data-aos="fade-right" data-tilt data-tilt-scale="1.05">
                         <i class="fas fa-phone"></i>
                         <h3>Phone</h3>
                         <p>+91 XXXXX XXXXX</p>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="100" data-tilt data-tilt-scale="1.05">
                         <i class="fas fa-envelope"></i>
                         <h3>Email</h3>
                         <p>info@saiaccountables.com</p>
                     </div>
-                    <div class="contact-item">
+                    <div class="contact-item" data-aos="fade-right" data-aos-delay="200" data-tilt data-tilt-scale="1.05">
                         <i class="fas fa-map-marker-alt"></i>
                         <h3>Address</h3>
                         <p>Your Business Address</p>
                     </div>
                 </div>
-                <div class="contact-form">
+                <div class="contact-form" data-aos="fade-left">
                     <form>
                         <input type="text" placeholder="Your Name" required>
                         <input type="email" placeholder="Your Email" required>
@@ -257,6 +275,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -162,4 +162,31 @@ document.addEventListener('DOMContentLoaded', () => {
             spacing: 16.00
         })
     }
+    
+    // Initialize AOS
+    AOS.init({
+        duration: 800,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 50
+    });
+
+    // Initialize Typed.js
+    if (document.getElementById('typed-text')) {
+        new Typed('#typed-text', {
+            strings: [
+                'Smarter Tax Solutions',
+                'Expert Financial Planning',
+                'Seamless Compliance',
+                'Business Growth'
+            ],
+            typeSpeed: 80,
+            backSpeed: 50,
+            backDelay: 3000,
+            loop: true,
+            showCursor: true,
+            cursorChar: '|',
+            autoInsertCss: true
+        });
+    }
 });
