@@ -18,6 +18,9 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* Helper Classes */
@@ -26,6 +29,17 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* Layout Ordering */
+.top-bar { order: 1; }
+.main-header { order: 2; }
+main { order: 3; flex: 1; }
+footer { order: 4; }
+
+@media (max-width: 768px) {
+    .top-bar { order: 2; }
+    .main-header { order: 1; }
 }
 
 a {
@@ -115,7 +129,7 @@ ul {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #ffffff 40%, rgba(255,255,255,0.9) 100%), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
+    background: linear-gradient(to right, #ffffff 40%, rgba(255,255,255,0.7) 70%, rgba(255,255,255,0.2) 100%), url('https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1600&q=80');
     background-size: cover;
     background-position: center right;
     color: var(--text-color);
